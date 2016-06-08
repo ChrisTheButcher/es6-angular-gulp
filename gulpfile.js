@@ -10,8 +10,8 @@ const $ = require("gulp-load-plugins")({ lazy: true });
 const config = {
     bower: './bower_components',
     node: './node_modules',
-    src: './Assets/src',
-    dist: './Assets/dist'
+    src: './assets/src',
+    dist: './assets/dist'
 };
 
 gulp.task('styles', ()=> {
