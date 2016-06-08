@@ -59,6 +59,10 @@ item {
     border-bottom: 1px solid rgba(white, 0.3);
     overflow: hidden;
 
+    .text {
+        cursor: text;
+    }
+
     .text, input {
         width: calc(100% - 125px);
         display: inline-block;
