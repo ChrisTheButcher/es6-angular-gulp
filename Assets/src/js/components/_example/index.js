@@ -7,5 +7,5 @@ export let _ExampleComponent = {
 
         ctrl.$onInit =()=> console.warn(ctrl.test);
     },
-    template: `Example: {{$ctrl.test}}`
+    template: `<span class="caption">Example component</span> {{$ctrl.test}}`
 };

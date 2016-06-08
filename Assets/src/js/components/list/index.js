@@ -3,12 +3,14 @@ export let ListComponent = {
         let ctrl = this;
         let ixd =item=> ctrl.list.indexOf(item);
 
-        ctrl.list = [-1,0,1,2,3,4,5];
+        ctrl.list = ["Bananas", "Apples", "Tomatoes", "Avocados", "Rice", "Tea"];
 
         ctrl.removeItem =item=> ctrl.list.splice(ixd(item), 1);
         ctrl.saveItem =(item, data)=> ctrl.list[ixd(item)] = data;
     },
     template: `
+        <span class="caption">List component</span>
+
         <ul class="list">
             <item ng-repeat="item in $ctrl.list track by $index" 
                 data="item" 
@@ -17,6 +19,9 @@ export let ListComponent = {
             </item>
         </ul> 
 
-        {{$ctrl.list | json}}
+        <code>
+            <span class="caption">Component one-way data binding</span>
+            {{$ctrl.list | json}}
+        </code>
     ` 
 }; 
