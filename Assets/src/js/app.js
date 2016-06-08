@@ -1,12 +1,5 @@
-import { AppComponent } from "./components/app"; 
-import { ListComponent } from "./components/list"; 
-import { ItemComponent } from "./components/item"; 
-import { _ExampleComponent } from "./components/_example"; 
-
-const app = angular.module("app", []);  
-
-app
-    .component("app", AppComponent)
-    .component("list", ListComponent)
-    .component("item", ItemComponent)
-    .component("example", _ExampleComponent);   
+angular.module("app", [])
+    .component("app", require("./components/app"))
+    .component("list", require("./components/list"))
+    .component("item", require("./components/item"))
+    .component("example", require("./components/example"));    

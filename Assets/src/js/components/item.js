@@ -1,4 +1,4 @@
-export let ItemComponent = {
+module.exports = {
     bindings: {
         data: '<',
         onRemove: '&',

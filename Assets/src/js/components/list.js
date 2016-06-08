@@ -1,4 +1,4 @@
-export let ListComponent = {
+module.exports = {
     controller: function() {
         let ctrl = this;
         let ixd =item=> ctrl.list.indexOf(item);
